@@ -1,7 +1,7 @@
 <?php
 
     namespace Scripts;
-    use Db\Conexion;
+    include "../db/conexion.php";
 
     class Campers extends Conexion
     {
@@ -18,15 +18,28 @@
             $this->idReg = $idReg;
 
             try {
-                $this->conexion = new Conexion("localhost", "campuslands", "campus", "campus2023");
+                $this->conexion = new Conexion();
             } catch (PDOException $e) {
                 echo "Ocurrió un error";
             }
         }
-        public function insertCampers(){
-            $query = "INSERT INTO campers (nombreCamper, apellidoCamper, fechaNac, idReg) VALUES ($nombreCamper, $apellidoCamper, $fechaNac, $idReg)";
+        public function insertCampers(){          
+            if (isset($_POST['Guardar'])) {
 
-            /* $result = $this->pdo->prepare */
+                $nombreCamper = $_POST['nombreCamper'];
+                $apellidoCamper = $_POST['apellidoCamper'];
+                $fechaNac = $_POST['fechaNac'];
+                $idReg = $_POST['idReg'];
+
+                $query = "INSERT INTO campers (nombreCamper, apellidoCamper, fechaNac, idReg) VALUES ($nombreCamper, $apellidoCamper, $fechaNac, $idReg)";
+                $result = $this->conexion->prepare($query);
+                $result->execute();
+            }
+        }
+        public function getCampers($nombreCamper, $apellidoCamper, $fechaNac, $idReg){
+            $query = "SELECT * FROM campers";
+            $result = $this->conexion->prepare($query);
+            $result->execute();
         }
     }
 
