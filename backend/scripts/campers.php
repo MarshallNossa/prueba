@@ -1,7 +1,5 @@
 <?php
-
     namespace Scripts;
-    include "../db/conexion.php";
 
     class Campers extends Conexion
     {
@@ -42,10 +40,4 @@
             $result->execute();
         }
     }
-
-
-
-
-
-
 ?>

@@ -1,7 +1,6 @@
 <?php
     namespace Db;
-    class Conexion
-    {
+    class Conexion{
         private $conn;
         protected static $settings = Array(
                 "driver" => "mysql",
