@@ -6,7 +6,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Db\\": "./db/",
+            "Db\\": "db/",
             "Scripts\\": "scripts/",
             "Home\\": "/backend/"
         }

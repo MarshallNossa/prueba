@@ -1,7 +1,9 @@
 <?php
-    require("./vendor/autoload.php");
+    require("vendor/autoload.php");
 
-    use Db\Conexion;
+    require_once("db/conexion.php");
 
-    $conexion = new Conexion("localhost", "campuslands", "campus", "campus2023");
+    $conexion = new Conexion();
+    $conexion->getConnection();
+
 ?>

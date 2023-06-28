@@ -116,6 +116,7 @@ ALTER TABLE `departamento`
 -- AUTO_INCREMENT de la tabla `pais`
 --
 ALTER TABLE `pais`
+  MODIFY `nombrePais` VARCHAR(60) NOT NULL;
   MODIFY `idPais` int NOT NULL AUTO_INCREMENT;
 
 --
