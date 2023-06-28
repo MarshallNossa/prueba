@@ -1,0 +1,15 @@
+{
+    "name": "spukm01-070/backend",
+    "description": "...",
+    "require": {
+        "bramus/router": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Db": "db/",
+            "Routes": "routes/",
+            "Scripts": "scripts/",
+            "Home": "/backend/"
+        }
+    }
+}

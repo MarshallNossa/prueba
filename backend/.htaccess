@@ -1,0 +1,6 @@
+<IfModule mod rewrite.c>
+    ReWriteEngine on
+    ReWriteCond %{REQUEST_FILENAME} !-f
+    ReWriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule ^(.*)$ index.php?ruta=$1 [L,QSA]
+</IfModule>
