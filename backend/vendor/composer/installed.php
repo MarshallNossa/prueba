@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'spukm01-070/backend',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '4bba5af5e51af4bc6ae3013c32f1edc2406f6363',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '91858a5d07d4e8201b21df91a39194a1a63cbd5f',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -20,9 +20,9 @@
             'dev_requirement' => false,
         ),
         'spukm01-070/backend' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '4bba5af5e51af4bc6ae3013c32f1edc2406f6363',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '91858a5d07d4e8201b21df91a39194a1a63cbd5f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

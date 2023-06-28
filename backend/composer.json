@@ -6,10 +6,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Db": "db/",
-            "Routes": "routes/",
-            "Scripts": "scripts/",
-            "Home": "/backend/"
+            "Db\\": "./db/",
+            "Scripts\\": "scripts/",
+            "Home\\": "/backend/"
         }
     }
 }
