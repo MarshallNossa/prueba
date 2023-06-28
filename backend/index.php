@@ -3,8 +3,8 @@
 
     use Db\Conexion;
 
-    /* $db = new Conexion();
-    $conn = $db->getConnection(); */
+    $db = new Conexion();
+    $conn = $db->getConnection();
 
 ?>
 

@@ -24,7 +24,7 @@
             $dbConfig = self::$settings;
             $this->conn = null;
 
-            $dsn = "{$dbConfig['driver']}:host={$dbConfig['host']};dbname:{$dbConfig['dbname']};";
+            $dsn = "{$dbConfig['driver']}:host={$dbConfig['host']};dbname:{$dbConfig['dbname']};charset:{$dbConfig['collation']}";
 
             try {
                 $this->conn = new \PDO($dsn, $dbConfig['username'], $dbConfig['password'], $dbConfig['options']);
